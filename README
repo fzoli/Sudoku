@@ -1,0 +1,22 @@
+Sudoku feladvány generáló és megoldó.
+Apache Tomcat 7 szerveren tesztelve.
+
+A weboldalt első alkalommal címezve máris egy Sudoku feladvány jelenik meg.
+A felhasználó egérrel az egyik beviteli mezőbe kattintva beírhat egy számot 1 - 9 között.
+A program által előre megadott számok nem módosíthatóak.
+
+Az "Ellenőriz" gombra kattintva kérhető le, hogy az eddig megadott számok helytállóak-e
+(az aktuális kitöltöttség alapján, nem a tényleges megoldás alapján, tehát később még lehet hibás bármelyik szám).
+A helyes mezők zölddel, a hibás mezők pirossal vannak jelölve és a gép által előre megadott számok kékkel.
+
+A "Megold" gombra kattintva a szerver közli a feladvány megoldását.
+Miután meg lett oldva egy feladvány (mindegy, hogy a gép vagy a felhasználó oldotta-e meg),
+minden mező írásvédetté válik.
+
+Az "Új feladvány" gombra kattintva új feladvány generálódik, amit újra megoldhat a felhasználó.
+
+A "Saját feladvány" gombra kattintva egy teljesen üres Sudoku tábla jelenik meg, melynek minden mezője szerkeszthető.
+Ekkor a "Megold" gombra kattintva a szerver megpróbálja megoldani a feladványt.
+Ha csak egy megoldása van a feladványnak, szó nélkül megjeleníti a megoldást;
+Ha a feladványnak több megoldása is van, megjeleníti az egyik lehetséges megoldást és közli, hogy több is van;
+Ha a feladvány nem felel meg a Sudoku szabályainak, meg se próbálja megoldani, pirossal jelzi a hibás mezőket.
